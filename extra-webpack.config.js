@@ -8,13 +8,15 @@ module.exports = (config, options) => {
     '@kaz/navbar',
     '@kaz/auth',
     '@kaz/utility',
-    'angular/core',
-    'angular/animations',
-    'angular/common',
-    'angular/forms',
-    'angular/platform-browser',
-    'angular/router'
+    '@angular/core',
+    '@angular/animations',
+    '@angular/common',
+    '@angular/forms',
+    '@angular/platform-browser',
+    '@angular/router'
   ]);
 
+  singleSpaWebpackConfig.output.libraryTarget = 'system';
+  console.log('DEBUG: webpack config', singleSpaWebpackConfig);
   return singleSpaWebpackConfig;
 };
