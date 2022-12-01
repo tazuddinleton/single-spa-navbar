@@ -39,7 +39,8 @@
               "libraryName": "navbar",
               "libraryTarget": "umd"
             },
-            "deployUrl": "http://localhost:4003/"
+            "deployUrl": "http://localhost:4003/",
+            "aot": true
           },
           "configurations": {
             "production": {
