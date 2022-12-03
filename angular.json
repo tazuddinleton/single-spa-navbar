@@ -37,7 +37,7 @@
             "customWebpackConfig": {
               "path": "extra-webpack.config.js",
               "libraryName": "navbar",
-              "libraryTarget": "umd"
+              "libraryTarget": "system"
             },
             "deployUrl": "http://localhost:4003/",
             "aot": true

@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import {MatIconModule} from '@angular/material/icon'
 import {MatButtonModule} from '@angular/material/button'
 import {MatToolbarModule} from '@angular/material/toolbar'
+import { APP_BASE_HREF } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,9 @@ import {MatToolbarModule} from '@angular/material/toolbar'
     MatButtonModule,
     MatToolbarModule
   ],
-  providers: [],
+  providers: [
+    {provide: APP_BASE_HREF, useValue: '/'}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
